@@ -112,7 +112,7 @@ LOGOUT_REDIRECT_URL = '/login/'
 
 LANGUAGE_CODE = 'en-us'
 
-TIME_ZONE = os.environ.get('TIME_ZONE', 'Etc/UTC')
+TIME_ZONE = os.environ.get('TIME_ZONE', 'America/Caracas')
 
 USE_I18N = True
 

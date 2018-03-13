@@ -45,7 +45,7 @@ gulp.task('reset', function(cb) {
 });
 
 gulp.task('runserver', function(cb) {
-    var command = ['run', 'python', 'manage.py', 'runserver'];
+    var command = ['run', 'python', 'manage.py', 'runserver', '0.0.0.0:7000'];
     command = command.concat(process.argv.splice(3));
     spawn('pipenv', command, { stdio: 'inherit' }).on('exit', cb);
 });
